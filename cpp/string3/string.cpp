@@ -7,8 +7,8 @@ std::ostream& operator<<(std::ostream& out, const String& rhs)
 	return out << rhs.c_str(); 
 }
 
-String::String(const char *str, bool)
-: rep_(new StringRep(str, true))   //overloading이 안되서 bool 사용
+String::String(const char *str, bool)  //overloading이 안되서 bool 사용
+: rep_(new StringRep(str, true))   
 {
 	assert(this->rep_);
 	rep_->rc_= 1;
