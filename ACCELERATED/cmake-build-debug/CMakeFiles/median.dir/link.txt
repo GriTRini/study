@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\median.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\median.dir/objects.a @CMakeFiles\median.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\median.dir/objects.a -Wl,--no-whole-archive -o median.exe -Wl,--out-implib,libmedian.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\median.dir\linklibs.rsp

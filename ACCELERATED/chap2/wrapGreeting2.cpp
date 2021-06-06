@@ -14,7 +14,7 @@ int main()
 
     const string greeting = "hello, " + name;
 
-    const int pad = 2;
+    const int pad = 1;
     //const int rows = 2 * pad + 3;
     const string::size_type rows = 2 * pad + 3;
     const string::size_type cols = greeting.size() + 2 * pad + 2;

@@ -84,7 +84,7 @@ istream& read(istream& in, Student_info& s)
     in >> s.name >> midterm >> finalterm;
     read_hw(in, homework);
 
-    if(in != 0) {
+    if(in) {
         s.finalScore = grade(midterm, finalterm, homework);
     }
     return in;

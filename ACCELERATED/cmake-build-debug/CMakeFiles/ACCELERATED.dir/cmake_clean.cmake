@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "ACCELERATED.exe"
+  "ACCELERATED.exe.manifest"
+  "ACCELERATED.pdb"
+  "CMakeFiles/ACCELERATED.dir/chap2/wrapGreeting.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap2/wrapGreeting2.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap2/wrapGreeting3.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap2/wrapGreeting4.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/maxMinString.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/one2Hundred.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/one2Hundred2.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/one2Thousand.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/score.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/score2.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/score3.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/score4.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap4/wordCount.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/score5.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/score6.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/score7.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/split.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/testString.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/testVector.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap5/wordCount2.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap6/palindrome.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap6/score8.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap6/split2.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap6/testAlgorithm.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap7/crossReference.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap7/score9.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap7/wordCount3.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap8/main.cpp.obj"
+  "CMakeFiles/ACCELERATED.dir/chap8/median.cpp.obj"
+  "libACCELERATED.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ACCELERATED.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
