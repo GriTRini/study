@@ -6,18 +6,7 @@
 #include <ios>
 #include <iomanip>
 
-using std::sort;
-using std::vector;
-using std::domain_error;
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-using std::istream;
-using std::setprecision;
-using std::cerr;
-using std::max;
-using std::setw;
+using namespace std;
 
 int main ()
 {

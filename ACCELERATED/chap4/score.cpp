@@ -3,10 +3,7 @@
 #include <ios>
 #include <iomanip>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
+using namespace std;
 
 int main()
 {   cout << "please enter your name :";
@@ -16,7 +13,7 @@ int main()
     cout << "hello, " + name << endl;
 
     cout << "plese enter your midterm finalterm score :";
-    int midterm, finalterm;
+    int midterm, finalterm; 
     cin >> midterm >> finalterm;
 
     int count = 0;
@@ -29,7 +26,7 @@ int main()
         sum += hw;
     }
     std::streamsize prec = cout.precision();
-    cout << std::setprecision(3);
+    cout << std::setprecision(3);       // 소수점 3번째 자리 까지 출력
     cout << "Your final score :" << 0.2 * midterm + 0.4 * finalterm + 0.4 * sum << endl;
     cout << std::setprecision(prec);
 

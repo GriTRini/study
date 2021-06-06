@@ -6,17 +6,7 @@
 #include <ios>
 #include <iomanip>
 
-using std::sort;
-using std::vector;
-using std::domain_error;
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-using std::istream;
-using std::setprecision;
-using std::cerr;
-using std::max;
+using namespace std;
 
 struct Student_info {
     string name;
@@ -25,6 +15,7 @@ struct Student_info {
     // double finalterm;
     // vector<double> homework;
 };
+
 double median(vector<double> vec)
 {
     sort(vec.begin(), vec.end());

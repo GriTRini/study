@@ -6,27 +6,20 @@
 #include <ios>
 #include <iomanip>
 
-using std::sort;
-using std::vector;
-using std::domain_error;
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-using std::istream;
-using std::setprecision;
-using std::cerr;
+using namespace std;
 
-double median(vector<double> vec)
+double median(vector<double> vec)   // vector vec 입력
 {
-    sort(vec.begin(), vec.end());
+    sort(vec.begin(), vec.end());   // 오름차순 정렬
 
-    const int mid = vec.size() / 2;
+    const int mid = vec.size() / 2; // 중간값은 vec.size를 2로 나눈 값
 
+    // vec의 size가 홀수 이면 위에서 구한 mid와 mid-1을 더한후 2로 나눈값을 리턴한다.
     return (vec.size() % 2 == 1) ? vec[mid] : (vec[mid] + vec[mid- 1]) / 2;
         
 }
-double grade(double midterm, double finalterm, double homework)
+
+double grade(double midterm, double finalterm, double homework) // midterm, finalterm, homework 입력
 {
     return 0.2 * midterm + 0.4 * finalterm + 0.4 * homework;
 }
@@ -34,6 +27,7 @@ double grade(double midterm, double finalterm, double homework)
 double grade(double midterm, double finalterm, const vector<double>& homeworks)
 {
     if (homeworks.size() == 0) {
+        // vector의 homeworks의 size가 0이면 밑의 문장 출력
         throw domain_error("student has done no homework");
     }
     return grade(midterm,  finalterm, median(homeworks));
@@ -41,17 +35,17 @@ double grade(double midterm, double finalterm, const vector<double>& homeworks)
 
 istream& read_hw(istream& in, vector<double>& homework)
 {
-    if (in) {
+    if (in) {   // in이 0이 아니면
         
-        homework.clear();
+        homework.clear();   // vector homework를 clear함
         double x;
-        while(cin >> x) {
+        while(cin >> x) {   // x를 double로 선언한 후에 vector homework에 넣음
             homework.push_back(x);
         }
-        in.clear();
+        in.clear(); // in을 clear
     }
 
-    return in;
+    return in;  //in을 retrun;
 }
 
 int main()
