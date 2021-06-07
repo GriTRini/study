@@ -2,6 +2,7 @@
 // Created by user on 2021-06-01.
 //
 
+
 #include <iostream>
 #include <list>
 #include <algorithm>
@@ -11,18 +12,7 @@
 #include <string>
 #include <vector>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::sort;
-using std::max;
-using std::list;
-using std::string;
-using std::istream;
-using std::domain_error;
-using std::streamsize;
-using std::cerr;
-using std::vector;
+using namespace std;
 
 struct Student_info 
 {
@@ -128,6 +118,9 @@ vector<Student_info> extract_fails(vector<Student_info>& students)
 }
 */
 
+// vector 대신 list 사용
+// vector는 중간에 값이 지워지면 뒤에오는 값들이 모두다 비워져 있는 곳으로 당겨야 해서 추출하는데 오래걸린다.
+// list 에서는 제거된 요소만 지워지면 된다.
 list<Student_info> extract_fails(list<Student_info>& students) 
 {
     list<Student_info> fail;
@@ -136,7 +129,7 @@ list<Student_info> extract_fails(list<Student_info>& students)
     for (vec_iter iter = students.begin(); iter != students.end(); ++iter) {
         if (fgrade(*iter)) {
             fail.push_back(*iter);
-            iter = students.erase(iter);
+            iter = students.erase(iter);        
         } else {
             ++iter;
         }

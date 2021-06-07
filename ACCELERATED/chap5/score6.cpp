@@ -10,17 +10,7 @@
 #include <iomanip>
 #include <string>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::sort;
-using std::max;
-using std::vector;
-using std::string;
-using std::istream;
-using std::domain_error;
-using std::streamsize;
-using std::cerr;
+using namespace std;
 
 struct Student_info 
 {
@@ -32,7 +22,7 @@ struct Student_info
 
 double median(vector<double>& vec) 
 {
-    sort(vec.begin(), vec.end());
+    sort(vec.begin(), vec.end());       // 오름차순
     const int mid = vec.size() / 2;
 
 //    if (vec.size() % 2 == 1)
@@ -89,10 +79,12 @@ bool compare(const Student_info& s1, const Student_info& s2)
     return s1.name < s2.name;
 }
 
+// 60밑은 과락
 bool fgrade(const Student_info& s) 
 {
     return ::grade(s) < 60;
 }
+
 /*
 vector<Student_info> extract_fails(vector<Student_info>& students) 
 {
@@ -129,12 +121,14 @@ vector<Student_info> extract_fails(vector<Student_info>& students)
 vector<Student_info> extract_fails(vector<Student_info>& students) 
 {
     vector<Student_info> fail;
-
+    //iter는 vector<Student_info>::iterator의 타입이다.
     typedef vector<Student_info>::iterator vec_iter;
-    for (vec_iter iter = students.begin(); iter != students.end(); ++iter) {
+    // iter를 students.begin()으로 값을 할당한 후에 iter가 end와 같지 않을때까지 증가시킨다.
+    for (vec_iter iter = students.begin(); iter != students.end(); ++iter) {        
+        // iter가 나타내는 값을 포인터로 가르켜서 가지고 온다.
         if (fgrade(*iter)) {
             fail.push_back(*iter);
-            students.erase(iter);
+            students.erase(iter);       // iter 초기화
         } else {
             ++iter;
         }
@@ -172,7 +166,7 @@ int main() {
     }
 
     cout << endl << "fail list" << endl;
-    typedef vector<Student_info>::const_iterator vect_citer;
+    typedef vector<Student_info>::const_iterator vect_citer;    // Read only
     for (vect_citer iter = fails.begin(); iter != fails.end(); ++iter) {
         cout << iter->name << string(maxLen - iter->name.size() + 1, ' ');
         try {

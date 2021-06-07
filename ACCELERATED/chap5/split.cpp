@@ -8,25 +8,15 @@
 #include <vector>
 #include <cctype>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::sort;
-using std::max;
-using std::list;
-using std::string;
-using std::istream;
-using std::domain_error;
-using std::streamsize;
-using std::cerr;
-using std::vector;
+using namespace std;
 
 vector<string> split(const string& s)
 {
     vector<string> words;
+    // 문장의 공백을 찾아서 단어로 나눔
 
     for (string::size_type i = 0; i != s.size(); ) {
-        while ( i != s.size() && isspace(s[i]))
+        while ( i != s.size() && isspace(s[i]))     // <cctype>, isspace는 해당 객체가 공백인지 나타내는 값을 반환하는 함수
             ++i;
         string::size_type j = i;
         while (j != s.size() && !isspace(s[j]))      
