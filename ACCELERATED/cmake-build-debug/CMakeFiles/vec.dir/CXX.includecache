@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Desktop/Github/study/ACCELERATED/chap11/vec/main.cpp
+iostream
+-
+vec.h
+C:/Users/user/Desktop/Github/study/ACCELERATED/chap11/vec/vec.h
+
+C:/Users/user/Desktop/Github/study/ACCELERATED/chap11/vec/vec.h
+memory
+-
+

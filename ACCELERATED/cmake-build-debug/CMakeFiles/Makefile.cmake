@@ -51,23 +51,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/maxMinString.dir/DependInfo.cmake"
   "CMakeFiles/score7.dir/DependInfo.cmake"
   "CMakeFiles/wrapGreeting4.dir/DependInfo.cmake"
   "CMakeFiles/wrapGreeting.dir/DependInfo.cmake"
   "CMakeFiles/wrapGreeting2.dir/DependInfo.cmake"
   "CMakeFiles/wrapGreeting3.dir/DependInfo.cmake"
-  "CMakeFiles/score6.dir/DependInfo.cmake"
-  "CMakeFiles/one2Thousand.dir/DependInfo.cmake"
-  "CMakeFiles/one2Hundred2.dir/DependInfo.cmake"
-  "CMakeFiles/one2Hundred.dir/DependInfo.cmake"
-  "CMakeFiles/score.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/score2.dir/DependInfo.cmake"
+  "CMakeFiles/score.dir/DependInfo.cmake"
   "CMakeFiles/score3.dir/DependInfo.cmake"
   "CMakeFiles/score4.dir/DependInfo.cmake"
-  "CMakeFiles/wordCount.dir/DependInfo.cmake"
   "CMakeFiles/score5.dir/DependInfo.cmake"
+  "CMakeFiles/score6.dir/DependInfo.cmake"
   "CMakeFiles/split2.dir/DependInfo.cmake"
   "CMakeFiles/split.dir/DependInfo.cmake"
   "CMakeFiles/testString.dir/DependInfo.cmake"
@@ -81,4 +76,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/wordCount3.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/median.dir/DependInfo.cmake"
+  "CMakeFiles/score10.dir/DependInfo.cmake"
+  "CMakeFiles/score11.dir/DependInfo.cmake"
+  "CMakeFiles/vec.dir/DependInfo.cmake"
   )

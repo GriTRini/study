@@ -129,19 +129,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named maxMinString
-
-# Build rule for target.
-maxMinString: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 maxMinString
-.PHONY : maxMinString
-
-# fast build rule for target.
-maxMinString/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maxMinString.dir\build.make CMakeFiles/maxMinString.dir/build
-.PHONY : maxMinString/fast
-
-#=============================================================================
 # Target rules for targets named score7
 
 # Build rule for target.
@@ -207,71 +194,6 @@ wrapGreeting3/fast:
 .PHONY : wrapGreeting3/fast
 
 #=============================================================================
-# Target rules for targets named score6
-
-# Build rule for target.
-score6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score6
-.PHONY : score6
-
-# fast build rule for target.
-score6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\score6.dir\build.make CMakeFiles/score6.dir/build
-.PHONY : score6/fast
-
-#=============================================================================
-# Target rules for targets named one2Thousand
-
-# Build rule for target.
-one2Thousand: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 one2Thousand
-.PHONY : one2Thousand
-
-# fast build rule for target.
-one2Thousand/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Thousand.dir\build.make CMakeFiles/one2Thousand.dir/build
-.PHONY : one2Thousand/fast
-
-#=============================================================================
-# Target rules for targets named one2Hundred2
-
-# Build rule for target.
-one2Hundred2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 one2Hundred2
-.PHONY : one2Hundred2
-
-# fast build rule for target.
-one2Hundred2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred2.dir\build.make CMakeFiles/one2Hundred2.dir/build
-.PHONY : one2Hundred2/fast
-
-#=============================================================================
-# Target rules for targets named one2Hundred
-
-# Build rule for target.
-one2Hundred: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 one2Hundred
-.PHONY : one2Hundred
-
-# fast build rule for target.
-one2Hundred/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred.dir\build.make CMakeFiles/one2Hundred.dir/build
-.PHONY : one2Hundred/fast
-
-#=============================================================================
-# Target rules for targets named score
-
-# Build rule for target.
-score: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score
-.PHONY : score
-
-# fast build rule for target.
-score/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\score.dir\build.make CMakeFiles/score.dir/build
-.PHONY : score/fast
-
-#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -296,6 +218,19 @@ score2: cmake_check_build_system
 score2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score2.dir\build.make CMakeFiles/score2.dir/build
 .PHONY : score2/fast
+
+#=============================================================================
+# Target rules for targets named score
+
+# Build rule for target.
+score: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score
+.PHONY : score
+
+# fast build rule for target.
+score/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score.dir\build.make CMakeFiles/score.dir/build
+.PHONY : score/fast
 
 #=============================================================================
 # Target rules for targets named score3
@@ -324,19 +259,6 @@ score4/fast:
 .PHONY : score4/fast
 
 #=============================================================================
-# Target rules for targets named wordCount
-
-# Build rule for target.
-wordCount: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 wordCount
-.PHONY : wordCount
-
-# fast build rule for target.
-wordCount/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount.dir\build.make CMakeFiles/wordCount.dir/build
-.PHONY : wordCount/fast
-
-#=============================================================================
 # Target rules for targets named score5
 
 # Build rule for target.
@@ -348,6 +270,19 @@ score5: cmake_check_build_system
 score5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/build
 .PHONY : score5/fast
+
+#=============================================================================
+# Target rules for targets named score6
+
+# Build rule for target.
+score6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score6
+.PHONY : score6
+
+# fast build rule for target.
+score6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score6.dir\build.make CMakeFiles/score6.dir/build
+.PHONY : score6/fast
 
 #=============================================================================
 # Target rules for targets named split2
@@ -518,6 +453,72 @@ median/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
 
+#=============================================================================
+# Target rules for targets named score10
+
+# Build rule for target.
+score10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score10
+.PHONY : score10
+
+# fast build rule for target.
+score10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/build
+.PHONY : score10/fast
+
+#=============================================================================
+# Target rules for targets named score11
+
+# Build rule for target.
+score11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 score11
+.PHONY : score11
+
+# fast build rule for target.
+score11/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/build
+.PHONY : score11/fast
+
+#=============================================================================
+# Target rules for targets named vec
+
+# Build rule for target.
+vec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vec
+.PHONY : vec
+
+# fast build rule for target.
+vec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/build
+.PHONY : vec/fast
+
+chap11/vec/main.obj: chap11/vec/main.cpp.obj
+
+.PHONY : chap11/vec/main.obj
+
+# target to build an object file
+chap11/vec/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/chap11/vec/main.cpp.obj
+.PHONY : chap11/vec/main.cpp.obj
+
+chap11/vec/main.i: chap11/vec/main.cpp.i
+
+.PHONY : chap11/vec/main.i
+
+# target to preprocess a source file
+chap11/vec/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/chap11/vec/main.cpp.i
+.PHONY : chap11/vec/main.cpp.i
+
+chap11/vec/main.s: chap11/vec/main.cpp.s
+
+.PHONY : chap11/vec/main.s
+
+# target to generate assembly for a file
+chap11/vec/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/chap11/vec/main.cpp.s
+.PHONY : chap11/vec/main.cpp.s
+
 chap2/wrapGreeting.obj: chap2/wrapGreeting.cpp.obj
 
 .PHONY : chap2/wrapGreeting.obj
@@ -626,114 +627,6 @@ chap2/wrapGreeting4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting4.dir\build.make CMakeFiles/wrapGreeting4.dir/chap2/wrapGreeting4.cpp.s
 .PHONY : chap2/wrapGreeting4.cpp.s
 
-chap4/maxMinString.obj: chap4/maxMinString.cpp.obj
-
-.PHONY : chap4/maxMinString.obj
-
-# target to build an object file
-chap4/maxMinString.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maxMinString.dir\build.make CMakeFiles/maxMinString.dir/chap4/maxMinString.cpp.obj
-.PHONY : chap4/maxMinString.cpp.obj
-
-chap4/maxMinString.i: chap4/maxMinString.cpp.i
-
-.PHONY : chap4/maxMinString.i
-
-# target to preprocess a source file
-chap4/maxMinString.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maxMinString.dir\build.make CMakeFiles/maxMinString.dir/chap4/maxMinString.cpp.i
-.PHONY : chap4/maxMinString.cpp.i
-
-chap4/maxMinString.s: chap4/maxMinString.cpp.s
-
-.PHONY : chap4/maxMinString.s
-
-# target to generate assembly for a file
-chap4/maxMinString.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maxMinString.dir\build.make CMakeFiles/maxMinString.dir/chap4/maxMinString.cpp.s
-.PHONY : chap4/maxMinString.cpp.s
-
-chap4/one2Hundred.obj: chap4/one2Hundred.cpp.obj
-
-.PHONY : chap4/one2Hundred.obj
-
-# target to build an object file
-chap4/one2Hundred.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred.dir\build.make CMakeFiles/one2Hundred.dir/chap4/one2Hundred.cpp.obj
-.PHONY : chap4/one2Hundred.cpp.obj
-
-chap4/one2Hundred.i: chap4/one2Hundred.cpp.i
-
-.PHONY : chap4/one2Hundred.i
-
-# target to preprocess a source file
-chap4/one2Hundred.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred.dir\build.make CMakeFiles/one2Hundred.dir/chap4/one2Hundred.cpp.i
-.PHONY : chap4/one2Hundred.cpp.i
-
-chap4/one2Hundred.s: chap4/one2Hundred.cpp.s
-
-.PHONY : chap4/one2Hundred.s
-
-# target to generate assembly for a file
-chap4/one2Hundred.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred.dir\build.make CMakeFiles/one2Hundred.dir/chap4/one2Hundred.cpp.s
-.PHONY : chap4/one2Hundred.cpp.s
-
-chap4/one2Hundred2.obj: chap4/one2Hundred2.cpp.obj
-
-.PHONY : chap4/one2Hundred2.obj
-
-# target to build an object file
-chap4/one2Hundred2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred2.dir\build.make CMakeFiles/one2Hundred2.dir/chap4/one2Hundred2.cpp.obj
-.PHONY : chap4/one2Hundred2.cpp.obj
-
-chap4/one2Hundred2.i: chap4/one2Hundred2.cpp.i
-
-.PHONY : chap4/one2Hundred2.i
-
-# target to preprocess a source file
-chap4/one2Hundred2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred2.dir\build.make CMakeFiles/one2Hundred2.dir/chap4/one2Hundred2.cpp.i
-.PHONY : chap4/one2Hundred2.cpp.i
-
-chap4/one2Hundred2.s: chap4/one2Hundred2.cpp.s
-
-.PHONY : chap4/one2Hundred2.s
-
-# target to generate assembly for a file
-chap4/one2Hundred2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Hundred2.dir\build.make CMakeFiles/one2Hundred2.dir/chap4/one2Hundred2.cpp.s
-.PHONY : chap4/one2Hundred2.cpp.s
-
-chap4/one2Thousand.obj: chap4/one2Thousand.cpp.obj
-
-.PHONY : chap4/one2Thousand.obj
-
-# target to build an object file
-chap4/one2Thousand.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Thousand.dir\build.make CMakeFiles/one2Thousand.dir/chap4/one2Thousand.cpp.obj
-.PHONY : chap4/one2Thousand.cpp.obj
-
-chap4/one2Thousand.i: chap4/one2Thousand.cpp.i
-
-.PHONY : chap4/one2Thousand.i
-
-# target to preprocess a source file
-chap4/one2Thousand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Thousand.dir\build.make CMakeFiles/one2Thousand.dir/chap4/one2Thousand.cpp.i
-.PHONY : chap4/one2Thousand.cpp.i
-
-chap4/one2Thousand.s: chap4/one2Thousand.cpp.s
-
-.PHONY : chap4/one2Thousand.s
-
-# target to generate assembly for a file
-chap4/one2Thousand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\one2Thousand.dir\build.make CMakeFiles/one2Thousand.dir/chap4/one2Thousand.cpp.s
-.PHONY : chap4/one2Thousand.cpp.s
-
 chap4/score.obj: chap4/score.cpp.obj
 
 .PHONY : chap4/score.obj
@@ -841,33 +734,6 @@ chap4/score4.s: chap4/score4.cpp.s
 chap4/score4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score4.dir\build.make CMakeFiles/score4.dir/chap4/score4.cpp.s
 .PHONY : chap4/score4.cpp.s
-
-chap4/wordCount.obj: chap4/wordCount.cpp.obj
-
-.PHONY : chap4/wordCount.obj
-
-# target to build an object file
-chap4/wordCount.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount.dir\build.make CMakeFiles/wordCount.dir/chap4/wordCount.cpp.obj
-.PHONY : chap4/wordCount.cpp.obj
-
-chap4/wordCount.i: chap4/wordCount.cpp.i
-
-.PHONY : chap4/wordCount.i
-
-# target to preprocess a source file
-chap4/wordCount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount.dir\build.make CMakeFiles/wordCount.dir/chap4/wordCount.cpp.i
-.PHONY : chap4/wordCount.cpp.i
-
-chap4/wordCount.s: chap4/wordCount.cpp.s
-
-.PHONY : chap4/wordCount.s
-
-# target to generate assembly for a file
-chap4/wordCount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount.dir\build.make CMakeFiles/wordCount.dir/chap4/wordCount.cpp.s
-.PHONY : chap4/wordCount.cpp.s
 
 chap5/score5.obj: chap5/score5.cpp.obj
 
@@ -1328,6 +1194,249 @@ chap8/test.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/test.c.s
 .PHONY : chap8/test.c.s
 
+chap9/score10/average.obj: chap9/score10/average.cpp.obj
+
+.PHONY : chap9/score10/average.obj
+
+# target to build an object file
+chap9/score10/average.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/average.cpp.obj
+.PHONY : chap9/score10/average.cpp.obj
+
+chap9/score10/average.i: chap9/score10/average.cpp.i
+
+.PHONY : chap9/score10/average.i
+
+# target to preprocess a source file
+chap9/score10/average.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/average.cpp.i
+.PHONY : chap9/score10/average.cpp.i
+
+chap9/score10/average.s: chap9/score10/average.cpp.s
+
+.PHONY : chap9/score10/average.s
+
+# target to generate assembly for a file
+chap9/score10/average.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/average.cpp.s
+.PHONY : chap9/score10/average.cpp.s
+
+chap9/score10/grade.obj: chap9/score10/grade.cpp.obj
+
+.PHONY : chap9/score10/grade.obj
+
+# target to build an object file
+chap9/score10/grade.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/grade.cpp.obj
+.PHONY : chap9/score10/grade.cpp.obj
+
+chap9/score10/grade.i: chap9/score10/grade.cpp.i
+
+.PHONY : chap9/score10/grade.i
+
+# target to preprocess a source file
+chap9/score10/grade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/grade.cpp.i
+.PHONY : chap9/score10/grade.cpp.i
+
+chap9/score10/grade.s: chap9/score10/grade.cpp.s
+
+.PHONY : chap9/score10/grade.s
+
+# target to generate assembly for a file
+chap9/score10/grade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/grade.cpp.s
+.PHONY : chap9/score10/grade.cpp.s
+
+chap9/score10/main.obj: chap9/score10/main.cpp.obj
+
+.PHONY : chap9/score10/main.obj
+
+# target to build an object file
+chap9/score10/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/main.cpp.obj
+.PHONY : chap9/score10/main.cpp.obj
+
+chap9/score10/main.i: chap9/score10/main.cpp.i
+
+.PHONY : chap9/score10/main.i
+
+# target to preprocess a source file
+chap9/score10/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/main.cpp.i
+.PHONY : chap9/score10/main.cpp.i
+
+chap9/score10/main.s: chap9/score10/main.cpp.s
+
+.PHONY : chap9/score10/main.s
+
+# target to generate assembly for a file
+chap9/score10/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/main.cpp.s
+.PHONY : chap9/score10/main.cpp.s
+
+chap9/score10/median.obj: chap9/score10/median.cpp.obj
+
+.PHONY : chap9/score10/median.obj
+
+# target to build an object file
+chap9/score10/median.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/median.cpp.obj
+.PHONY : chap9/score10/median.cpp.obj
+
+chap9/score10/median.i: chap9/score10/median.cpp.i
+
+.PHONY : chap9/score10/median.i
+
+# target to preprocess a source file
+chap9/score10/median.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/median.cpp.i
+.PHONY : chap9/score10/median.cpp.i
+
+chap9/score10/median.s: chap9/score10/median.cpp.s
+
+.PHONY : chap9/score10/median.s
+
+# target to generate assembly for a file
+chap9/score10/median.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/median.cpp.s
+.PHONY : chap9/score10/median.cpp.s
+
+chap9/score10/student_info.obj: chap9/score10/student_info.cpp.obj
+
+.PHONY : chap9/score10/student_info.obj
+
+# target to build an object file
+chap9/score10/student_info.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/student_info.cpp.obj
+.PHONY : chap9/score10/student_info.cpp.obj
+
+chap9/score10/student_info.i: chap9/score10/student_info.cpp.i
+
+.PHONY : chap9/score10/student_info.i
+
+# target to preprocess a source file
+chap9/score10/student_info.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/student_info.cpp.i
+.PHONY : chap9/score10/student_info.cpp.i
+
+chap9/score10/student_info.s: chap9/score10/student_info.cpp.s
+
+.PHONY : chap9/score10/student_info.s
+
+# target to generate assembly for a file
+chap9/score10/student_info.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/chap9/score10/student_info.cpp.s
+.PHONY : chap9/score10/student_info.cpp.s
+
+chap9/score11/grade.obj: chap9/score11/grade.cpp.obj
+
+.PHONY : chap9/score11/grade.obj
+
+# target to build an object file
+chap9/score11/grade.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/grade.cpp.obj
+.PHONY : chap9/score11/grade.cpp.obj
+
+chap9/score11/grade.i: chap9/score11/grade.cpp.i
+
+.PHONY : chap9/score11/grade.i
+
+# target to preprocess a source file
+chap9/score11/grade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/grade.cpp.i
+.PHONY : chap9/score11/grade.cpp.i
+
+chap9/score11/grade.s: chap9/score11/grade.cpp.s
+
+.PHONY : chap9/score11/grade.s
+
+# target to generate assembly for a file
+chap9/score11/grade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/grade.cpp.s
+.PHONY : chap9/score11/grade.cpp.s
+
+chap9/score11/main.obj: chap9/score11/main.cpp.obj
+
+.PHONY : chap9/score11/main.obj
+
+# target to build an object file
+chap9/score11/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/main.cpp.obj
+.PHONY : chap9/score11/main.cpp.obj
+
+chap9/score11/main.i: chap9/score11/main.cpp.i
+
+.PHONY : chap9/score11/main.i
+
+# target to preprocess a source file
+chap9/score11/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/main.cpp.i
+.PHONY : chap9/score11/main.cpp.i
+
+chap9/score11/main.s: chap9/score11/main.cpp.s
+
+.PHONY : chap9/score11/main.s
+
+# target to generate assembly for a file
+chap9/score11/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/main.cpp.s
+.PHONY : chap9/score11/main.cpp.s
+
+chap9/score11/median.obj: chap9/score11/median.cpp.obj
+
+.PHONY : chap9/score11/median.obj
+
+# target to build an object file
+chap9/score11/median.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/median.cpp.obj
+.PHONY : chap9/score11/median.cpp.obj
+
+chap9/score11/median.i: chap9/score11/median.cpp.i
+
+.PHONY : chap9/score11/median.i
+
+# target to preprocess a source file
+chap9/score11/median.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/median.cpp.i
+.PHONY : chap9/score11/median.cpp.i
+
+chap9/score11/median.s: chap9/score11/median.cpp.s
+
+.PHONY : chap9/score11/median.s
+
+# target to generate assembly for a file
+chap9/score11/median.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/median.cpp.s
+.PHONY : chap9/score11/median.cpp.s
+
+chap9/score11/student_info.obj: chap9/score11/student_info.cpp.obj
+
+.PHONY : chap9/score11/student_info.obj
+
+# target to build an object file
+chap9/score11/student_info.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/student_info.cpp.obj
+.PHONY : chap9/score11/student_info.cpp.obj
+
+chap9/score11/student_info.i: chap9/score11/student_info.cpp.i
+
+.PHONY : chap9/score11/student_info.i
+
+# target to preprocess a source file
+chap9/score11/student_info.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/student_info.cpp.i
+.PHONY : chap9/score11/student_info.cpp.i
+
+chap9/score11/student_info.s: chap9/score11/student_info.cpp.s
+
+.PHONY : chap9/score11/student_info.s
+
+# target to generate assembly for a file
+chap9/score11/student_info.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/chap9/score11/student_info.cpp.s
+.PHONY : chap9/score11/student_info.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1338,13 +1447,11 @@ help:
 	@echo ... rebuild_cache
 	@echo ... crossReference
 	@echo ... main
-	@echo ... maxMinString
 	@echo ... median
-	@echo ... one2Hundred
-	@echo ... one2Hundred2
-	@echo ... one2Thousand
 	@echo ... palindrome
 	@echo ... score
+	@echo ... score10
+	@echo ... score11
 	@echo ... score2
 	@echo ... score3
 	@echo ... score4
@@ -1359,13 +1466,16 @@ help:
 	@echo ... testAlgorithm
 	@echo ... testString
 	@echo ... testVector
-	@echo ... wordCount
+	@echo ... vec
 	@echo ... wordCount2
 	@echo ... wordCount3
 	@echo ... wrapGreeting
 	@echo ... wrapGreeting2
 	@echo ... wrapGreeting3
 	@echo ... wrapGreeting4
+	@echo ... chap11/vec/main.obj
+	@echo ... chap11/vec/main.i
+	@echo ... chap11/vec/main.s
 	@echo ... chap2/wrapGreeting.obj
 	@echo ... chap2/wrapGreeting.i
 	@echo ... chap2/wrapGreeting.s
@@ -1378,18 +1488,6 @@ help:
 	@echo ... chap2/wrapGreeting4.obj
 	@echo ... chap2/wrapGreeting4.i
 	@echo ... chap2/wrapGreeting4.s
-	@echo ... chap4/maxMinString.obj
-	@echo ... chap4/maxMinString.i
-	@echo ... chap4/maxMinString.s
-	@echo ... chap4/one2Hundred.obj
-	@echo ... chap4/one2Hundred.i
-	@echo ... chap4/one2Hundred.s
-	@echo ... chap4/one2Hundred2.obj
-	@echo ... chap4/one2Hundred2.i
-	@echo ... chap4/one2Hundred2.s
-	@echo ... chap4/one2Thousand.obj
-	@echo ... chap4/one2Thousand.i
-	@echo ... chap4/one2Thousand.s
 	@echo ... chap4/score.obj
 	@echo ... chap4/score.i
 	@echo ... chap4/score.s
@@ -1402,9 +1500,6 @@ help:
 	@echo ... chap4/score4.obj
 	@echo ... chap4/score4.i
 	@echo ... chap4/score4.s
-	@echo ... chap4/wordCount.obj
-	@echo ... chap4/wordCount.i
-	@echo ... chap4/wordCount.s
 	@echo ... chap5/score5.obj
 	@echo ... chap5/score5.i
 	@echo ... chap5/score5.s
@@ -1456,6 +1551,33 @@ help:
 	@echo ... chap8/test.obj
 	@echo ... chap8/test.i
 	@echo ... chap8/test.s
+	@echo ... chap9/score10/average.obj
+	@echo ... chap9/score10/average.i
+	@echo ... chap9/score10/average.s
+	@echo ... chap9/score10/grade.obj
+	@echo ... chap9/score10/grade.i
+	@echo ... chap9/score10/grade.s
+	@echo ... chap9/score10/main.obj
+	@echo ... chap9/score10/main.i
+	@echo ... chap9/score10/main.s
+	@echo ... chap9/score10/median.obj
+	@echo ... chap9/score10/median.i
+	@echo ... chap9/score10/median.s
+	@echo ... chap9/score10/student_info.obj
+	@echo ... chap9/score10/student_info.i
+	@echo ... chap9/score10/student_info.s
+	@echo ... chap9/score11/grade.obj
+	@echo ... chap9/score11/grade.i
+	@echo ... chap9/score11/grade.s
+	@echo ... chap9/score11/main.obj
+	@echo ... chap9/score11/main.i
+	@echo ... chap9/score11/main.s
+	@echo ... chap9/score11/median.obj
+	@echo ... chap9/score11/median.i
+	@echo ... chap9/score11/median.s
+	@echo ... chap9/score11/student_info.obj
+	@echo ... chap9/score11/student_info.i
+	@echo ... chap9/score11/student_info.s
 .PHONY : help
 
 
