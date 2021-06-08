@@ -75,27 +75,27 @@ include CMakeFiles/score5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/score5.dir/flags.make
 
-CMakeFiles/score5.dir/chap5/score5.cpp.obj: CMakeFiles/score5.dir/flags.make
-CMakeFiles/score5.dir/chap5/score5.cpp.obj: ../chap5/score5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/score5.dir/chap5/score5.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\score5.dir\chap5\score5.cpp.obj -c C:\Users\user\Desktop\Github\study\ACCELERATED\chap5\score5.cpp
+CMakeFiles/score5.dir/chap4/score5.cpp.obj: CMakeFiles/score5.dir/flags.make
+CMakeFiles/score5.dir/chap4/score5.cpp.obj: ../chap4/score5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/score5.dir/chap4/score5.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\score5.dir\chap4\score5.cpp.obj -c C:\Users\user\Desktop\Github\study\ACCELERATED\chap4\score5.cpp
 
-CMakeFiles/score5.dir/chap5/score5.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/score5.dir/chap5/score5.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\Github\study\ACCELERATED\chap5\score5.cpp > CMakeFiles\score5.dir\chap5\score5.cpp.i
+CMakeFiles/score5.dir/chap4/score5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/score5.dir/chap4/score5.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\Github\study\ACCELERATED\chap4\score5.cpp > CMakeFiles\score5.dir\chap4\score5.cpp.i
 
-CMakeFiles/score5.dir/chap5/score5.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/score5.dir/chap5/score5.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\Github\study\ACCELERATED\chap5\score5.cpp -o CMakeFiles\score5.dir\chap5\score5.cpp.s
+CMakeFiles/score5.dir/chap4/score5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/score5.dir/chap4/score5.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\Github\study\ACCELERATED\chap4\score5.cpp -o CMakeFiles\score5.dir\chap4\score5.cpp.s
 
 # Object files for target score5
 score5_OBJECTS = \
-"CMakeFiles/score5.dir/chap5/score5.cpp.obj"
+"CMakeFiles/score5.dir/chap4/score5.cpp.obj"
 
 # External object files for target score5
 score5_EXTERNAL_OBJECTS =
 
-score5.exe: CMakeFiles/score5.dir/chap5/score5.cpp.obj
+score5.exe: CMakeFiles/score5.dir/chap4/score5.cpp.obj
 score5.exe: CMakeFiles/score5.dir/build.make
 score5.exe: CMakeFiles/score5.dir/linklibs.rsp
 score5.exe: CMakeFiles/score5.dir/objects1.rsp

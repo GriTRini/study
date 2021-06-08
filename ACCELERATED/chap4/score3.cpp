@@ -8,6 +8,7 @@
 
 using namespace std;
 
+// 함수를 호출하면 인수로 제공된 벡터를 통째로 복사
 double median(vector<double> vec)   // vector vec 입력
 {
     sort(vec.begin(), vec.end());   // 오름차순 정렬

@@ -9,11 +9,13 @@
 
 using namespace std;
 
+// 인수가 공백일 때는 true, 그렇지 않을 때는 false를 반환
 bool is_not_space(char c) 
 {
     return !isspace(c);
 }
 
+// 인수가 공백일 때는 false, 그렇지 않을 때는 true를 반환
 bool is_space(char c) 
 {
     return isspace(c);
@@ -22,11 +24,18 @@ vector<string> split(const string& s)
 {
     vector<string> words;
 
+
     for (string::const_iterator it = s.cbegin(); it != s.cend() ; ) 
     {
+        // 선행 공백을 무시
+        // find_if(처음배열, 끝배열, 조건)
         it = find_if(it, s.cend(), is_not_space);
 
+        // 다음 단어의 끝을 찾음
         string::const_iterator it2 = find_if(it, s.cend(), is_space);
+
+        // it, it2 범위의 문자를 복사
+        // it과 it2는 인덱스가 아니라 반복자 이다.
         if (it != it2) {
             words.push_back(string(it, it2));
         }

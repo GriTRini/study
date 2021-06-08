@@ -5,11 +5,12 @@
 #ifndef ACCELERATED_VEC_H
 #define ACCELERATED_VEC_H
 
+#include <algorithm>
 #include <memory>
 
-template <typename T> class Vec {
+template <typename T>
+class Vec {
 public:
-    //반복자 타입에 관해서 typedef를 제공해야 함.
     typedef T* iterator;
     typedef const T* const_iterator;
     typedef size_t size_type;
@@ -18,39 +19,30 @@ public:
     typedef T& reference;
     typedef const T& const_reference;
 
-    // T타입의 기본 생성자를 사용해 요소를 초기화 할 때 사용할 값을 얻는다.
+
     Vec();
     explicit Vec(size_type size, const T& val = T());
-
-    // reference로 해서 rhs로 입력된 값을 가지고 온다.
-    // reference는 대상을 직접 할당
-    // 포인터는 주소값을 할당
     Vec(const Vec<T>& rhs);
-    // 소멸자
     ~Vec();
-    //반환값은 reference를 사용해야 한다.
     Vec<T>& operator=(const Vec<T>& rhs);
 
-    // 인덱스 연산자는 기저 배열에서 해당 위치를 찾아 요소의 참조를 반환합니다.
-    //참조는 반환하므로 인덱스 연산으로 Vec에 저장된 값들을 바꿀 수 있습니다.
     size_type size() const;
     T& operator[](int index);
     const T& operator[](int index) const;
 
-    // 반복자를 반환하는 함수 (변경가능)
     iterator begin();
     iterator end();
-    // 반복자를 반환하는 함수 (변경불가능)
+
     const_iterator cbegin() const;
     const_iterator cend() const;
 
-    // 값을 받아서 배열의 뒤에 넣음
-    // vector와 달리 push_back함수를 지원하지 않아서 임의로 메모리를 늘린다.
-    // 할당한 메모리가 전부 차게 되면 기존의 메모리의 2배를 추가로 할당한다.
     void push_back(const T& val);
 
+    iterator erase(iterator it);
+    iterator erase(const T& val);
+    void clear();
+
 private:
-    //각 요소 값을 포인터 참조 함.
     T* data;
     T* avail;
     T* limit;
@@ -93,9 +85,9 @@ Vec<T>& Vec<T>::operator=(const Vec<T>& rhs) {
 }
 template <typename T>
 void Vec<T>::create() {
-    data = 0;
-    avail = 0;
-    limit = 0;
+    this->data = 0;
+    this->avail = 0;
+    this->limit = 0;
 }
 template <typename T>
 void Vec<T>::create(size_type n, const T& val) {
@@ -116,8 +108,8 @@ void Vec<T>::create(Vec<T>::const_iterator b, Vec<T>::const_iterator e) {
 template <typename T>
 void Vec<T>::uncreate() {
     if(this->data ) {
-        typename Vec<T>::iterator it = avail;
-        while (it != data) {
+        typename Vec<T>::iterator it = this->avail;
+        while (it != this->data) {
             this->alloc.destroy(it);
             --it;
         }
@@ -159,6 +151,46 @@ void Vec<T>::push_back(const T &val) {
         this->grow();
     this->unchecked_append(val);
 }
+template <typename T>
+typename Vec<T>::iterator Vec<T>::erase(const T& val) {
+    typename Vec<T>::iterator it = this->data;
+    if(this->data ) {
+        while (it != this->avail) {
+            if(*it == val)
+                break;
+            ++it;
+        }
+        if (it != this->avail) {
+            this->alloc.destroy(it);
+            std::copy(it + 1, this->avail, it);
+            --this->avail;
+            this->alloc.destroy(this->avail);
+        }
+    }
+    return it;
+}
+template <typename T>
+typename Vec<T>::iterator Vec<T>::erase(Vec<T>::iterator it) {
+    this->alloc.destroy(it);
+    std::copy(it + 1, this->avail, it);
+    --this->avail;
+    this->alloc.destroy(this->avail);
+
+    return it;
+}
+
+template <typename T>
+void Vec<T>::clear() {
+    if(this->data ) {
+        typename Vec<T>::iterator it = this->avail;
+        while (it != this->data) {
+            this->alloc.destroy(it);
+            --it;
+        }
+        this->data = this->avail = 0;
+    }
+}
+
 template <typename T>
 void Vec<T>::grow() {
     typename Vec<T>::size_type  new_size;

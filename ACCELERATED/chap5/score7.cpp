@@ -22,31 +22,28 @@ struct Student_info
     vector<double> homework;
 };
 
-double median(vector<double>& vec) 
+double median(vector<double> vec)
 {
-    sort(vec.begin(), vec.end());
-    const int mid = vec.size() / 2;
+    sort(vec.begin(), vec.end());       // 오름차순으로 정리
 
-//    if (vec.size() % 2 == 1)
-//        return vec[mid];
-//    else
-//        return (vec[mid] + vec[mid -1]) / 2;
+    const int mid = vec.size() / 2;     // vector로 선언한 vec의 사이즈를 2로 나누면 가운데 값이 됨
 
-    return ((vec.size() % 2 == 1) ? vec[mid] : (vec[mid] + vec[mid -1]) / 2) ;
+    return (vec.size() % 2 == 1) ? vec[mid] : (vec[mid] + vec[mid- 1]) / 2;     //짝수 또는 홀수 일때 가운데값 구하는 방법
+
 }
 
-double grade(double midterm, double finalterm, double homework) 
+double grade(double midterm, double finalterm, double homework) // midterm, finalterm, homework 입력
 {
     return 0.2 * midterm + 0.4 * finalterm + 0.4 * homework;
 }
 
-double grade(double midterm, double finalterm, const vector<double>& homework) 
+double grade(double midterm, double finalterm, const vector<double>& homeworks)
 {
-    if(homework.size() == 0)
+    if (homeworks.size() == 0) {
+        // vector의 homeworks의 size가 0이면 밑의 문장 출력
         throw domain_error("student has done no homework");
-
-    vector<double> tmp = homework;
-    return grade(midterm, finalterm, median(tmp));
+    }
+    return grade(midterm,  finalterm, median(homeworks));
 }
 
 double grade(const Student_info& s) 
@@ -121,15 +118,17 @@ vector<Student_info> extract_fails(vector<Student_info>& students)
 // vector 대신 list 사용
 // vector는 중간에 값이 지워지면 뒤에오는 값들이 모두다 비워져 있는 곳으로 당겨야 해서 추출하는데 오래걸린다.
 // list 에서는 제거된 요소만 지워지면 된다.
-list<Student_info> extract_fails(list<Student_info>& students) 
+vector<Student_info> extract_fails(vector<Student_info>& students)
 {
-    list<Student_info> fail;
-
-    typedef list<Student_info>::iterator vec_iter;
+    vector<Student_info> fail;
+    //iter는 vector<Student_info>::iterator의 타입이다.
+    typedef vector<Student_info>::iterator vec_iter;
+    // iter를 students.begin()으로 값을 할당한 후에 iter가 end와 같지 않을때까지 증가시킨다.
     for (vec_iter iter = students.begin(); iter != students.end(); ++iter) {
+        // iter가 나타내는 값을 포인터로 가르켜서 가지고 온다.
         if (fgrade(*iter)) {
             fail.push_back(*iter);
-            iter = students.erase(iter);        
+            students.erase(iter);       // iter 초기화
         } else {
             ++iter;
         }

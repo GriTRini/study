@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/score5.dir/chap5/score5.cpp.obj"
+  "CMakeFiles/score5.dir/chap4/score5.cpp.obj"
   "libscore5.dll.a"
   "score5.exe"
   "score5.exe.manifest"

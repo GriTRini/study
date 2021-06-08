@@ -735,32 +735,32 @@ chap4/score4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score4.dir\build.make CMakeFiles/score4.dir/chap4/score4.cpp.s
 .PHONY : chap4/score4.cpp.s
 
-chap5/score5.obj: chap5/score5.cpp.obj
+chap4/score5.obj: chap4/score5.cpp.obj
 
-.PHONY : chap5/score5.obj
+.PHONY : chap4/score5.obj
 
 # target to build an object file
-chap5/score5.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap5/score5.cpp.obj
-.PHONY : chap5/score5.cpp.obj
+chap4/score5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap4/score5.cpp.obj
+.PHONY : chap4/score5.cpp.obj
 
-chap5/score5.i: chap5/score5.cpp.i
+chap4/score5.i: chap4/score5.cpp.i
 
-.PHONY : chap5/score5.i
+.PHONY : chap4/score5.i
 
 # target to preprocess a source file
-chap5/score5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap5/score5.cpp.i
-.PHONY : chap5/score5.cpp.i
+chap4/score5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap4/score5.cpp.i
+.PHONY : chap4/score5.cpp.i
 
-chap5/score5.s: chap5/score5.cpp.s
+chap4/score5.s: chap4/score5.cpp.s
 
-.PHONY : chap5/score5.s
+.PHONY : chap4/score5.s
 
 # target to generate assembly for a file
-chap5/score5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap5/score5.cpp.s
-.PHONY : chap5/score5.cpp.s
+chap4/score5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/chap4/score5.cpp.s
+.PHONY : chap4/score5.cpp.s
 
 chap5/score6.obj: chap5/score6.cpp.obj
 
@@ -1500,9 +1500,9 @@ help:
 	@echo ... chap4/score4.obj
 	@echo ... chap4/score4.i
 	@echo ... chap4/score4.s
-	@echo ... chap5/score5.obj
-	@echo ... chap5/score5.i
-	@echo ... chap5/score5.s
+	@echo ... chap4/score5.obj
+	@echo ... chap4/score5.i
+	@echo ... chap4/score5.s
 	@echo ... chap5/score6.obj
 	@echo ... chap5/score6.i
 	@echo ... chap5/score6.s

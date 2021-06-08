@@ -16,9 +16,11 @@ vector<string> split(const string& s)
     // 문장의 공백을 찾아서 단어로 나눔
 
     for (string::size_type i = 0; i != s.size(); ) {
+        //공백이면 while문 작동 (글자 찾을 때 까지)
         while ( i != s.size() && isspace(s[i]))     // <cctype>, isspace는 해당 객체가 공백인지 나타내는 값을 반환하는 함수
             ++i;
         string::size_type j = i;
+        //글자이면 while문 작동 (공백 찾을 때 까지)
         while (j != s.size() && !isspace(s[j]))      
            ++j;
 
