@@ -7,6 +7,7 @@ C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/test
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score2.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score3.dir
+C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/handle.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score4.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score5.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score6.dir
@@ -27,4 +28,7 @@ C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/main
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/median.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score10.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/score11.dir
+C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/pointer1.dir
 C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/vec.dir
+C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/str.dir
+C:/Users/user/Desktop/Github/study/ACCELERATED/cmake-build-debug/CMakeFiles/coregrad.dir

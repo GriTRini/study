@@ -246,6 +246,19 @@ score3/fast:
 .PHONY : score3/fast
 
 #=============================================================================
+# Target rules for targets named handle
+
+# Build rule for target.
+handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 handle
+.PHONY : handle
+
+# fast build rule for target.
+handle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/build
+.PHONY : handle/fast
+
+#=============================================================================
 # Target rules for targets named score4
 
 # Build rule for target.
@@ -480,6 +493,19 @@ score11/fast:
 .PHONY : score11/fast
 
 #=============================================================================
+# Target rules for targets named pointer1
+
+# Build rule for target.
+pointer1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pointer1
+.PHONY : pointer1
+
+# fast build rule for target.
+pointer1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/build
+.PHONY : pointer1/fast
+
+#=============================================================================
 # Target rules for targets named vec
 
 # Build rule for target.
@@ -491,6 +517,62 @@ vec: cmake_check_build_system
 vec/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/build
 .PHONY : vec/fast
+
+#=============================================================================
+# Target rules for targets named str
+
+# Build rule for target.
+str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 str
+.PHONY : str
+
+# fast build rule for target.
+str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+.PHONY : str/fast
+
+#=============================================================================
+# Target rules for targets named coregrad
+
+# Build rule for target.
+coregrad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 coregrad
+.PHONY : coregrad
+
+# fast build rule for target.
+coregrad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/build
+.PHONY : coregrad/fast
+
+chap10/pointer1.obj: chap10/pointer1.cpp.obj
+
+.PHONY : chap10/pointer1.obj
+
+# target to build an object file
+chap10/pointer1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/chap10/pointer1.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap10/pointer1.cpp.obj
+.PHONY : chap10/pointer1.cpp.obj
+
+chap10/pointer1.i: chap10/pointer1.cpp.i
+
+.PHONY : chap10/pointer1.i
+
+# target to preprocess a source file
+chap10/pointer1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/chap10/pointer1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap10/pointer1.cpp.i
+.PHONY : chap10/pointer1.cpp.i
+
+chap10/pointer1.s: chap10/pointer1.cpp.s
+
+.PHONY : chap10/pointer1.s
+
+# target to generate assembly for a file
+chap10/pointer1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/chap10/pointer1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap10/pointer1.cpp.s
+.PHONY : chap10/pointer1.cpp.s
 
 chap11/vec/main.obj: chap11/vec/main.cpp.obj
 
@@ -518,6 +600,249 @@ chap11/vec/main.s: chap11/vec/main.cpp.s
 chap11/vec/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/chap11/vec/main.cpp.s
 .PHONY : chap11/vec/main.cpp.s
+
+chap12/str/main.obj: chap12/str/main.cpp.obj
+
+.PHONY : chap12/str/main.obj
+
+# target to build an object file
+chap12/str/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/chap12/str/main.cpp.obj
+.PHONY : chap12/str/main.cpp.obj
+
+chap12/str/main.i: chap12/str/main.cpp.i
+
+.PHONY : chap12/str/main.i
+
+# target to preprocess a source file
+chap12/str/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/chap12/str/main.cpp.i
+.PHONY : chap12/str/main.cpp.i
+
+chap12/str/main.s: chap12/str/main.cpp.s
+
+.PHONY : chap12/str/main.s
+
+# target to generate assembly for a file
+chap12/str/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/chap12/str/main.cpp.s
+.PHONY : chap12/str/main.cpp.s
+
+chap13/core.obj: chap13/core.cpp.obj
+
+.PHONY : chap13/core.obj
+
+# target to build an object file
+chap13/core.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/core.cpp.obj
+.PHONY : chap13/core.cpp.obj
+
+chap13/core.i: chap13/core.cpp.i
+
+.PHONY : chap13/core.i
+
+# target to preprocess a source file
+chap13/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/core.cpp.i
+.PHONY : chap13/core.cpp.i
+
+chap13/core.s: chap13/core.cpp.s
+
+.PHONY : chap13/core.s
+
+# target to generate assembly for a file
+chap13/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/core.cpp.s
+.PHONY : chap13/core.cpp.s
+
+chap13/grad.obj: chap13/grad.cpp.obj
+
+.PHONY : chap13/grad.obj
+
+# target to build an object file
+chap13/grad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/grad.cpp.obj
+.PHONY : chap13/grad.cpp.obj
+
+chap13/grad.i: chap13/grad.cpp.i
+
+.PHONY : chap13/grad.i
+
+# target to preprocess a source file
+chap13/grad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/grad.cpp.i
+.PHONY : chap13/grad.cpp.i
+
+chap13/grad.s: chap13/grad.cpp.s
+
+.PHONY : chap13/grad.s
+
+# target to generate assembly for a file
+chap13/grad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/grad.cpp.s
+.PHONY : chap13/grad.cpp.s
+
+chap13/main.obj: chap13/main.cpp.obj
+
+.PHONY : chap13/main.obj
+
+# target to build an object file
+chap13/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/main.cpp.obj
+.PHONY : chap13/main.cpp.obj
+
+chap13/main.i: chap13/main.cpp.i
+
+.PHONY : chap13/main.i
+
+# target to preprocess a source file
+chap13/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/main.cpp.i
+.PHONY : chap13/main.cpp.i
+
+chap13/main.s: chap13/main.cpp.s
+
+.PHONY : chap13/main.s
+
+# target to generate assembly for a file
+chap13/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/main.cpp.s
+.PHONY : chap13/main.cpp.s
+
+chap13/median.obj: chap13/median.cpp.obj
+
+.PHONY : chap13/median.obj
+
+# target to build an object file
+chap13/median.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/median.cpp.obj
+.PHONY : chap13/median.cpp.obj
+
+chap13/median.i: chap13/median.cpp.i
+
+.PHONY : chap13/median.i
+
+# target to preprocess a source file
+chap13/median.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/median.cpp.i
+.PHONY : chap13/median.cpp.i
+
+chap13/median.s: chap13/median.cpp.s
+
+.PHONY : chap13/median.s
+
+# target to generate assembly for a file
+chap13/median.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/chap13/median.cpp.s
+.PHONY : chap13/median.cpp.s
+
+chap14/core.obj: chap14/core.cpp.obj
+
+.PHONY : chap14/core.obj
+
+# target to build an object file
+chap14/core.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/core.cpp.obj
+.PHONY : chap14/core.cpp.obj
+
+chap14/core.i: chap14/core.cpp.i
+
+.PHONY : chap14/core.i
+
+# target to preprocess a source file
+chap14/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/core.cpp.i
+.PHONY : chap14/core.cpp.i
+
+chap14/core.s: chap14/core.cpp.s
+
+.PHONY : chap14/core.s
+
+# target to generate assembly for a file
+chap14/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/core.cpp.s
+.PHONY : chap14/core.cpp.s
+
+chap14/grad.obj: chap14/grad.cpp.obj
+
+.PHONY : chap14/grad.obj
+
+# target to build an object file
+chap14/grad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grad.cpp.obj
+.PHONY : chap14/grad.cpp.obj
+
+chap14/grad.i: chap14/grad.cpp.i
+
+.PHONY : chap14/grad.i
+
+# target to preprocess a source file
+chap14/grad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grad.cpp.i
+.PHONY : chap14/grad.cpp.i
+
+chap14/grad.s: chap14/grad.cpp.s
+
+.PHONY : chap14/grad.s
+
+# target to generate assembly for a file
+chap14/grad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grad.cpp.s
+.PHONY : chap14/grad.cpp.s
+
+chap14/grade.obj: chap14/grade.cpp.obj
+
+.PHONY : chap14/grade.obj
+
+# target to build an object file
+chap14/grade.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grade.cpp.obj
+.PHONY : chap14/grade.cpp.obj
+
+chap14/grade.i: chap14/grade.cpp.i
+
+.PHONY : chap14/grade.i
+
+# target to preprocess a source file
+chap14/grade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grade.cpp.i
+.PHONY : chap14/grade.cpp.i
+
+chap14/grade.s: chap14/grade.cpp.s
+
+.PHONY : chap14/grade.s
+
+# target to generate assembly for a file
+chap14/grade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/grade.cpp.s
+.PHONY : chap14/grade.cpp.s
+
+chap14/main.obj: chap14/main.cpp.obj
+
+.PHONY : chap14/main.obj
+
+# target to build an object file
+chap14/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/main.cpp.obj
+.PHONY : chap14/main.cpp.obj
+
+chap14/main.i: chap14/main.cpp.i
+
+.PHONY : chap14/main.i
+
+# target to preprocess a source file
+chap14/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/main.cpp.i
+.PHONY : chap14/main.cpp.i
+
+chap14/main.s: chap14/main.cpp.s
+
+.PHONY : chap14/main.s
+
+# target to generate assembly for a file
+chap14/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/chap14/main.cpp.s
+.PHONY : chap14/main.cpp.s
 
 chap2/wrapGreeting.obj: chap2/wrapGreeting.cpp.obj
 
@@ -1167,32 +1492,32 @@ chap8/median.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/chap8/median.cpp.s
 .PHONY : chap8/median.cpp.s
 
-chap8/test.obj: chap8/test.c.obj
+chap8/split/main.obj: chap8/split/main.cpp.obj
 
-.PHONY : chap8/test.obj
+.PHONY : chap8/split/main.obj
 
 # target to build an object file
-chap8/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/test.c.obj
-.PHONY : chap8/test.c.obj
+chap8/split/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/split/main.cpp.obj
+.PHONY : chap8/split/main.cpp.obj
 
-chap8/test.i: chap8/test.c.i
+chap8/split/main.i: chap8/split/main.cpp.i
 
-.PHONY : chap8/test.i
+.PHONY : chap8/split/main.i
 
 # target to preprocess a source file
-chap8/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/test.c.i
-.PHONY : chap8/test.c.i
+chap8/split/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/split/main.cpp.i
+.PHONY : chap8/split/main.cpp.i
 
-chap8/test.s: chap8/test.c.s
+chap8/split/main.s: chap8/split/main.cpp.s
 
-.PHONY : chap8/test.s
+.PHONY : chap8/split/main.s
 
 # target to generate assembly for a file
-chap8/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/test.c.s
-.PHONY : chap8/test.c.s
+chap8/split/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/chap8/split/main.cpp.s
+.PHONY : chap8/split/main.cpp.s
 
 chap9/score10/average.obj: chap9/score10/average.cpp.obj
 
@@ -1445,10 +1770,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... coregrad
 	@echo ... crossReference
+	@echo ... handle
 	@echo ... main
 	@echo ... median
 	@echo ... palindrome
+	@echo ... pointer1
 	@echo ... score
 	@echo ... score10
 	@echo ... score11
@@ -1462,6 +1790,7 @@ help:
 	@echo ... score9
 	@echo ... split
 	@echo ... split2
+	@echo ... str
 	@echo ... test
 	@echo ... testAlgorithm
 	@echo ... testString
@@ -1473,9 +1802,39 @@ help:
 	@echo ... wrapGreeting2
 	@echo ... wrapGreeting3
 	@echo ... wrapGreeting4
+	@echo ... chap10/pointer1.obj
+	@echo ... chap10/pointer1.i
+	@echo ... chap10/pointer1.s
 	@echo ... chap11/vec/main.obj
 	@echo ... chap11/vec/main.i
 	@echo ... chap11/vec/main.s
+	@echo ... chap12/str/main.obj
+	@echo ... chap12/str/main.i
+	@echo ... chap12/str/main.s
+	@echo ... chap13/core.obj
+	@echo ... chap13/core.i
+	@echo ... chap13/core.s
+	@echo ... chap13/grad.obj
+	@echo ... chap13/grad.i
+	@echo ... chap13/grad.s
+	@echo ... chap13/main.obj
+	@echo ... chap13/main.i
+	@echo ... chap13/main.s
+	@echo ... chap13/median.obj
+	@echo ... chap13/median.i
+	@echo ... chap13/median.s
+	@echo ... chap14/core.obj
+	@echo ... chap14/core.i
+	@echo ... chap14/core.s
+	@echo ... chap14/grad.obj
+	@echo ... chap14/grad.i
+	@echo ... chap14/grad.s
+	@echo ... chap14/grade.obj
+	@echo ... chap14/grade.i
+	@echo ... chap14/grade.s
+	@echo ... chap14/main.obj
+	@echo ... chap14/main.i
+	@echo ... chap14/main.s
 	@echo ... chap2/wrapGreeting.obj
 	@echo ... chap2/wrapGreeting.i
 	@echo ... chap2/wrapGreeting.s
@@ -1548,9 +1907,9 @@ help:
 	@echo ... chap8/median.obj
 	@echo ... chap8/median.i
 	@echo ... chap8/median.s
-	@echo ... chap8/test.obj
-	@echo ... chap8/test.i
-	@echo ... chap8/test.s
+	@echo ... chap8/split/main.obj
+	@echo ... chap8/split/main.i
+	@echo ... chap8/split/main.s
 	@echo ... chap9/score10/average.obj
 	@echo ... chap9/score10/average.i
 	@echo ... chap9/score10/average.s

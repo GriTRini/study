@@ -80,6 +80,7 @@ all: CMakeFiles/test.dir/all
 all: CMakeFiles/score2.dir/all
 all: CMakeFiles/score.dir/all
 all: CMakeFiles/score3.dir/all
+all: CMakeFiles/handle.dir/all
 all: CMakeFiles/score4.dir/all
 all: CMakeFiles/score5.dir/all
 all: CMakeFiles/score6.dir/all
@@ -98,7 +99,10 @@ all: CMakeFiles/main.dir/all
 all: CMakeFiles/median.dir/all
 all: CMakeFiles/score10.dir/all
 all: CMakeFiles/score11.dir/all
+all: CMakeFiles/pointer1.dir/all
 all: CMakeFiles/vec.dir/all
+all: CMakeFiles/str.dir/all
+all: CMakeFiles/coregrad.dir/all
 
 .PHONY : all
 
@@ -117,6 +121,7 @@ clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/score2.dir/clean
 clean: CMakeFiles/score.dir/clean
 clean: CMakeFiles/score3.dir/clean
+clean: CMakeFiles/handle.dir/clean
 clean: CMakeFiles/score4.dir/clean
 clean: CMakeFiles/score5.dir/clean
 clean: CMakeFiles/score6.dir/clean
@@ -135,7 +140,10 @@ clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/median.dir/clean
 clean: CMakeFiles/score10.dir/clean
 clean: CMakeFiles/score11.dir/clean
+clean: CMakeFiles/pointer1.dir/clean
 clean: CMakeFiles/vec.dir/clean
+clean: CMakeFiles/str.dir/clean
+clean: CMakeFiles/coregrad.dir/clean
 
 .PHONY : clean
 
@@ -146,7 +154,7 @@ clean: CMakeFiles/vec.dir/clean
 CMakeFiles/score7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score7.dir\build.make CMakeFiles/score7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score7.dir\build.make CMakeFiles/score7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=32,33 "Built target score7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=45,46 "Built target score7"
 .PHONY : CMakeFiles/score7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -173,7 +181,7 @@ CMakeFiles/score7.dir/clean:
 CMakeFiles/wrapGreeting4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting4.dir\build.make CMakeFiles/wrapGreeting4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting4.dir\build.make CMakeFiles/wrapGreeting4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=62,63 "Built target wrapGreeting4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=77,78 "Built target wrapGreeting4"
 .PHONY : CMakeFiles/wrapGreeting4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -200,7 +208,7 @@ CMakeFiles/wrapGreeting4.dir/clean:
 CMakeFiles/wrapGreeting.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting.dir\build.make CMakeFiles/wrapGreeting.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting.dir\build.make CMakeFiles/wrapGreeting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=56,57 "Built target wrapGreeting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=71,72 "Built target wrapGreeting"
 .PHONY : CMakeFiles/wrapGreeting.dir/all
 
 # Build rule for subdir invocation for target.
@@ -227,7 +235,7 @@ CMakeFiles/wrapGreeting.dir/clean:
 CMakeFiles/wrapGreeting2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting2.dir\build.make CMakeFiles/wrapGreeting2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting2.dir\build.make CMakeFiles/wrapGreeting2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=58,59 "Built target wrapGreeting2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=73,74 "Built target wrapGreeting2"
 .PHONY : CMakeFiles/wrapGreeting2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -254,7 +262,7 @@ CMakeFiles/wrapGreeting2.dir/clean:
 CMakeFiles/wrapGreeting3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting3.dir\build.make CMakeFiles/wrapGreeting3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wrapGreeting3.dir\build.make CMakeFiles/wrapGreeting3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=60,61 "Built target wrapGreeting3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=75,76 "Built target wrapGreeting3"
 .PHONY : CMakeFiles/wrapGreeting3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -281,7 +289,7 @@ CMakeFiles/wrapGreeting3.dir/clean:
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=42,43 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=57,58 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -308,7 +316,7 @@ CMakeFiles/test.dir/clean:
 CMakeFiles/score2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score2.dir\build.make CMakeFiles/score2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score2.dir\build.make CMakeFiles/score2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=22,23 "Built target score2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=35,36 "Built target score2"
 .PHONY : CMakeFiles/score2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +343,7 @@ CMakeFiles/score2.dir/clean:
 CMakeFiles/score.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score.dir\build.make CMakeFiles/score.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score.dir\build.make CMakeFiles/score.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target score"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=22,23 "Built target score"
 .PHONY : CMakeFiles/score.dir/all
 
 # Build rule for subdir invocation for target.
@@ -362,7 +370,7 @@ CMakeFiles/score.dir/clean:
 CMakeFiles/score3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score3.dir\build.make CMakeFiles/score3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score3.dir\build.make CMakeFiles/score3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=24,25 "Built target score3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=37,38 "Built target score3"
 .PHONY : CMakeFiles/score3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -383,13 +391,40 @@ CMakeFiles/score3.dir/clean:
 .PHONY : CMakeFiles/score3.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/handle.dir
+
+# All Build rule for target.
+CMakeFiles/handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=9,10,11,12,13 "Built target handle"
+.PHONY : CMakeFiles/handle.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/handle.dir/rule
+
+# Convenience name for target.
+handle: CMakeFiles/handle.dir/rule
+
+.PHONY : handle
+
+# clean rule for target.
+CMakeFiles/handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\handle.dir\build.make CMakeFiles/handle.dir/clean
+.PHONY : CMakeFiles/handle.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/score4.dir
 
 # All Build rule for target.
 CMakeFiles/score4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score4.dir\build.make CMakeFiles/score4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score4.dir\build.make CMakeFiles/score4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=26,27 "Built target score4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=39,40 "Built target score4"
 .PHONY : CMakeFiles/score4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -416,7 +451,7 @@ CMakeFiles/score4.dir/clean:
 CMakeFiles/score5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score5.dir\build.make CMakeFiles/score5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=28,29 "Built target score5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=41,42 "Built target score5"
 .PHONY : CMakeFiles/score5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -443,7 +478,7 @@ CMakeFiles/score5.dir/clean:
 CMakeFiles/score6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score6.dir\build.make CMakeFiles/score6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score6.dir\build.make CMakeFiles/score6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=30,31 "Built target score6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=43,44 "Built target score6"
 .PHONY : CMakeFiles/score6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -470,7 +505,7 @@ CMakeFiles/score6.dir/clean:
 CMakeFiles/split2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\split2.dir\build.make CMakeFiles/split2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\split2.dir\build.make CMakeFiles/split2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=40,41 "Built target split2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=53,54 "Built target split2"
 .PHONY : CMakeFiles/split2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -497,7 +532,7 @@ CMakeFiles/split2.dir/clean:
 CMakeFiles/split.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\split.dir\build.make CMakeFiles/split.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\split.dir\build.make CMakeFiles/split.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=38,39 "Built target split"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=51,52 "Built target split"
 .PHONY : CMakeFiles/split.dir/all
 
 # Build rule for subdir invocation for target.
@@ -524,7 +559,7 @@ CMakeFiles/split.dir/clean:
 CMakeFiles/testString.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testString.dir\build.make CMakeFiles/testString.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testString.dir\build.make CMakeFiles/testString.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=46,47 "Built target testString"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=61,62 "Built target testString"
 .PHONY : CMakeFiles/testString.dir/all
 
 # Build rule for subdir invocation for target.
@@ -551,7 +586,7 @@ CMakeFiles/testString.dir/clean:
 CMakeFiles/testVector.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testVector.dir\build.make CMakeFiles/testVector.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testVector.dir\build.make CMakeFiles/testVector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=48,49 "Built target testVector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=63,64 "Built target testVector"
 .PHONY : CMakeFiles/testVector.dir/all
 
 # Build rule for subdir invocation for target.
@@ -578,7 +613,7 @@ CMakeFiles/testVector.dir/clean:
 CMakeFiles/wordCount2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount2.dir\build.make CMakeFiles/wordCount2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount2.dir\build.make CMakeFiles/wordCount2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=52,53 "Built target wordCount2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=67,68 "Built target wordCount2"
 .PHONY : CMakeFiles/wordCount2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -605,7 +640,7 @@ CMakeFiles/wordCount2.dir/clean:
 CMakeFiles/palindrome.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome.dir\build.make CMakeFiles/palindrome.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome.dir\build.make CMakeFiles/palindrome.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target palindrome"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=18,19 "Built target palindrome"
 .PHONY : CMakeFiles/palindrome.dir/all
 
 # Build rule for subdir invocation for target.
@@ -632,7 +667,7 @@ CMakeFiles/palindrome.dir/clean:
 CMakeFiles/score8.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score8.dir\build.make CMakeFiles/score8.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score8.dir\build.make CMakeFiles/score8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=34,35 "Built target score8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=47,48 "Built target score8"
 .PHONY : CMakeFiles/score8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -659,7 +694,7 @@ CMakeFiles/score8.dir/clean:
 CMakeFiles/testAlgorithm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAlgorithm.dir\build.make CMakeFiles/testAlgorithm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAlgorithm.dir\build.make CMakeFiles/testAlgorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=44,45 "Built target testAlgorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=59,60 "Built target testAlgorithm"
 .PHONY : CMakeFiles/testAlgorithm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -686,7 +721,7 @@ CMakeFiles/testAlgorithm.dir/clean:
 CMakeFiles/crossReference.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\crossReference.dir\build.make CMakeFiles/crossReference.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\crossReference.dir\build.make CMakeFiles/crossReference.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target crossReference"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target crossReference"
 .PHONY : CMakeFiles/crossReference.dir/all
 
 # Build rule for subdir invocation for target.
@@ -713,7 +748,7 @@ CMakeFiles/crossReference.dir/clean:
 CMakeFiles/score9.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score9.dir\build.make CMakeFiles/score9.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score9.dir\build.make CMakeFiles/score9.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=36,37 "Built target score9"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=49,50 "Built target score9"
 .PHONY : CMakeFiles/score9.dir/all
 
 # Build rule for subdir invocation for target.
@@ -740,7 +775,7 @@ CMakeFiles/score9.dir/clean:
 CMakeFiles/wordCount3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount3.dir\build.make CMakeFiles/wordCount3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\wordCount3.dir\build.make CMakeFiles/wordCount3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=54,55 "Built target wordCount3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=69,70 "Built target wordCount3"
 .PHONY : CMakeFiles/wordCount3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -767,7 +802,7 @@ CMakeFiles/wordCount3.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -794,7 +829,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/median.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target median"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=16,17 "Built target median"
 .PHONY : CMakeFiles/median.dir/all
 
 # Build rule for subdir invocation for target.
@@ -821,7 +856,7 @@ CMakeFiles/median.dir/clean:
 CMakeFiles/score10.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score10.dir\build.make CMakeFiles/score10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=11,12,13,14,15,16 "Built target score10"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27,28,29 "Built target score10"
 .PHONY : CMakeFiles/score10.dir/all
 
 # Build rule for subdir invocation for target.
@@ -848,7 +883,7 @@ CMakeFiles/score10.dir/clean:
 CMakeFiles/score11.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\score11.dir\build.make CMakeFiles/score11.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=17,18,19,20,21 "Built target score11"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=30,31,32,33,34 "Built target score11"
 .PHONY : CMakeFiles/score11.dir/all
 
 # Build rule for subdir invocation for target.
@@ -869,13 +904,40 @@ CMakeFiles/score11.dir/clean:
 .PHONY : CMakeFiles/score11.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pointer1.dir
+
+# All Build rule for target.
+CMakeFiles/pointer1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=20,21 "Built target pointer1"
+.PHONY : CMakeFiles/pointer1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pointer1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pointer1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/pointer1.dir/rule
+
+# Convenience name for target.
+pointer1: CMakeFiles/pointer1.dir/rule
+
+.PHONY : pointer1
+
+# clean rule for target.
+CMakeFiles/pointer1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pointer1.dir\build.make CMakeFiles/pointer1.dir/clean
+.PHONY : CMakeFiles/pointer1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vec.dir
 
 # All Build rule for target.
 CMakeFiles/vec.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=50,51 "Built target vec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=65,66 "Built target vec"
 .PHONY : CMakeFiles/vec.dir/all
 
 # Build rule for subdir invocation for target.
@@ -894,6 +956,60 @@ vec: CMakeFiles/vec.dir/rule
 CMakeFiles/vec.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vec.dir\build.make CMakeFiles/vec.dir/clean
 .PHONY : CMakeFiles/vec.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/str.dir
+
+# All Build rule for target.
+CMakeFiles/str.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=55,56 "Built target str"
+.PHONY : CMakeFiles/str.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/str.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/str.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/str.dir/rule
+
+# Convenience name for target.
+str: CMakeFiles/str.dir/rule
+
+.PHONY : str
+
+# clean rule for target.
+CMakeFiles/str.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/clean
+.PHONY : CMakeFiles/str.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/coregrad.dir
+
+# All Build rule for target.
+CMakeFiles/coregrad.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target coregrad"
+.PHONY : CMakeFiles/coregrad.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/coregrad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/coregrad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\Github\study\ACCELERATED\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/coregrad.dir/rule
+
+# Convenience name for target.
+coregrad: CMakeFiles/coregrad.dir/rule
+
+.PHONY : coregrad
+
+# clean rule for target.
+CMakeFiles/coregrad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coregrad.dir\build.make CMakeFiles/coregrad.dir/clean
+.PHONY : CMakeFiles/coregrad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

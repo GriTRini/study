@@ -11,17 +11,18 @@
 
 class Student_info {
 private:
-    std::string n;
+    std::string n;  // public에 name이라는 함수와 이름이 겹쳐서 n으로 설정
     double finalScore;
 
     std::istream& read_hw(std::istream& in, std::vector<double>& homework);
 public:
-    Student_info();
-    Student_info(std::istream& in);
+    Student_info();     // 생성자, 빈 Student_info 객체를 생성
+    Student_info(std::istream& in);     // 스트림을 읽어 Student_info 객체 생성
 
+    // name을 n으로 변경
     std::istream& read(std::istream& in);
 
-    std::string name() const;
+    std::string name() const;   // 읽기전용, n을 복사한 문자열 반환
     double getFinalScore() const;
 };
 

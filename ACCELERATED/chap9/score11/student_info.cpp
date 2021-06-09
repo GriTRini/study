@@ -11,6 +11,7 @@ using std::vector;
 using std::istream;
 using std::string;
 
+// private에 있는 string n의 값을 반환하는 name을 가지고 와서 이름을 반환
 bool compare(const Student_info& s1, const Student_info& s2)
 {
     return s1.name() < s2.name();
@@ -41,6 +42,7 @@ istream& Student_info::read(istream& in)
     return in;
 }
 
+// private에 있는 string n의 값을 반환한다.
 string Student_info::name() const
 {
     return this->n;

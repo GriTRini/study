@@ -10,6 +10,7 @@
 #include "student_info.h"
 
 class Student_info {
+    //읽기만 가능함, 쓰기는 안됨
 private:
     std::string n;
     double midterm;
@@ -24,7 +25,7 @@ public:
     std::istream& read(std::istream& in);
     double grade() const;
 
-    std::string name() const;
+    std::string name() const;   // 읽기전용 이름
     bool valid() const;
 };
 

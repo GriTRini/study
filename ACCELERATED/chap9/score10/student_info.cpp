@@ -7,9 +7,7 @@
 #include "grade.h"
 #include "student_info.h"
 
-using std::vector;
-using std::istream;
-using std::string;
+using namespace std;
 
 bool compare(const Student_info& s1, const Student_info& s2)
 {
@@ -36,6 +34,7 @@ istream& Student_info::read(istream& in)
 
 double Student_info::grade() const
 {
+    // ::가 있으면 멤버함수가 아닌 함수를 사용한다는 의미
     return ::grade(this->midterm, this->finalterm, this->homework);
 }
 
