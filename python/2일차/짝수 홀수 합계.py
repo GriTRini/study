@@ -12,3 +12,5 @@ for i in range(s, e):
 print('짝수의 합 = ', sum1)
 print('홀수의 합 = ', sum2)
 print('합계 = ', sum1+sum2)
+
+
