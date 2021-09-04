@@ -50,7 +50,8 @@ istream& read_hw(istream& in, vector<double>& homework)
 }
 
 int main()
-{   cout << "please enter your name :";
+{   
+    cout << "please enter your name :";
     string name;
     cin >> name;
 

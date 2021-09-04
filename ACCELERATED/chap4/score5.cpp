@@ -50,15 +50,15 @@ double grade( Student_info& s)
 
 istream& read_hw(istream& in, vector<double>& homework)
 {
-    if (in) {
+    if (in) {                       // in이 0이 아니면
         
-        homework.clear();
-        double x;
-        while(cin >> x) {
-            homework.push_back(x);
+        homework.clear();           // homework를 clear함
+        double x;                   // x의 인자는 double
+        while(cin >> x) {           // x를 cin함
+            homework.push_back(x);  // vector에 homework를 밀어 넣음
         }
-        in.clear();
-    }
+        in.clear();                 // 그리고 나서 in을 clear
+    }   
 
     return in;
 }
@@ -76,16 +76,16 @@ istream& read(istream& in, Student_info& s)
     double midterm, finalterm;
     vector<double> homework;
 
-    in >> s.name >> midterm >> finalterm;
-    read_hw(in, homework);
+    in >> s.name >> s.midterm >> s.finalterm;
+    read_hw(in, homework);              // read_hw로 정리
 
-    if(in) {
-        s.finalScore = grade(midterm, finalterm, homework);
+    if(in) {                            // in이 0이 아니면
+        s.finalScore = grade(midterm, finalterm, homework);         // s,finalScore에 grade함수를 이용하여 값을 넣음
     }
     return in;
 }
 
-bool compare(const Student_info& s1, const Student_info& s2)
+bool compare(const Student_info& s1, const Student_info& s2)        // 이름을 사전순으로 배열
 {
     return s1.name < s2.name;
 }

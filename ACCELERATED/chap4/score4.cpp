@@ -73,24 +73,24 @@ istream& read(istream& in, Student_info& s)
 
 bool compare(const Student_info& s1, const Student_info& s2)
 {
-    // 구조체 Student_info에 있는 s1과 s2의 이름을 비교해서 ???
+    // 구조체 Student_info에 있는 s1과 s2의 이름을 비교해서 사전순으로 배열
     return s1.name < s2.name;
 }
 
 int main()
 {   
-    vector<Student_info> students;
+    vector<Student_info> students;          // students의 벡터 선언
     
     //int maxLen = 0;
-    string::size_type maxLen = 0;
+    string::size_type maxLen = 0;           // maxLen 선언
 
     Student_info record;
     while (read(cin, record)) {
-        students.push_back(record);
-        maxLen = max(maxLen, record.name.size());
+        students.push_back(record);         // students 벡터에 들어가는 이름을 다음으로 넣기
+        maxLen = max(maxLen, record.name.size());       // students 벡터에 들어가는 이름 사이즈를 비교하여 큰 값을 maxLen에 넣는다.
     }
     
-    sort(students.begin(), students.end(), compare);
+    sort(students.begin(), students.end(), compare);        // compare 함수를 이용하여 이름을 나열한다.
 
     for (vector<Student_info>::size_type i = 0; i != students.size(); ++i) {
         cout << students[i].name << string(maxLen - students[i].name.size() + 1, ' ');
